@@ -1,16 +1,125 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Architecture Webpage</title>
+
+    <style>
+        body {
+            background-color: #d9dfd4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 1100px;
+            background-color: #e3e7df;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .imageContainer {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .imageContainer img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #999;
+            vertical-align: top;
+            padding: 10px;
+            background-color: #f2f4f0;
+        }
+
+        .leftImg, .rightImg {
+            width: 200px;
+        }
+
+        .midCol {
+            width: 600px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .midCol h3 {
+            margin-top: 0;
+        }
+
+        .thumbImg {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container">
+
+    <!-- Top full-width image -->
+    <div class="imageContainer">
+        <img src="IMAGE1.jpg" alt="Architecture Main Image">
+    </div>
+
+    <!-- Table Section -->
+    <table>
+
+        <!-- Row 1 -->
+        <tr>
+            <td class="leftImg">
+                <img class="thumbImg" src="IMAGE2.jpg" alt="">
+            </td>
+
+            <td class="midCol">
+                <h3>Unit #5 - Floor Plans</h3>
+                <p>A. Kitchen<br>
+                   B. Bathroom<br>
+                   C. Using "Slabs"<br>
+                   D. Georgian Home<br>
+                   E. Sketching Assignment #5
+                </p>
+            </td>
+
+            <td class="rightImg">
+                <img class="thumbImg" src="IMAGE3.jpg" alt="">
+            </td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td class="leftImg">
+                <img class="thumbImg" src="IMAGE4.jpg" alt="">
+            </td>
+
+            <td class="midCol">
+                <h3>Objective</h3>
+                <p>
+                    Discuss factors that are important in the design of bedrooms, kitchen and bathrooms.  
+                    Learn how to plan the arrangement of furniture in a room.  
+                    Understand basic design principles used in planning a functional living area.
+                </p>
+            </td>
+
+            <td class="rightImg">
+                <img class="thumbImg" src="IMAGE5.jpg" alt="">
+            </td>
+        </tr>
+
+    </table>
+
+</div>
 
 </body>
-
 </html>
